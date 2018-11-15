@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lineas">
+        <item>Seleccione una Linea...</item>
+        <item>Linea 1</item>
+        <item>Linea 2</item>
+        <item>Linea 3</item>
+        <item>Linea 3B</item>
+        <item>Linea 4</item>
+        <item>Linea 5</item>
+        <item>Linea 6</item>
+        <item>Linea 7</item>
+        <item>Linea A</item>
+        <item>Linea B</item>
+        <item>Linea C</item>
+        <item>Linea D</item>
+    </string-array>
+</resources>

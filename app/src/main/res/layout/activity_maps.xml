@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/mult_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Tarifa"
+
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnTarifa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnTarifa"
+            app:fab_icon="@drawable/money" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Horario"
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnHorario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnHorario"
+            app:fab_icon="@drawable/time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Linea"
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnLinea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnLinea"
+            app:fab_icon="@drawable/ruta" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+</RelativeLayout>

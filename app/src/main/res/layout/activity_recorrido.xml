@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecorridoActivity">
+
+    <TextView
+        android:id="@+id/recorrido_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal"
+        android:text="Seleccione Recorrido"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login_title"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="359dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <Spinner
+                android:id="@+id/idSpinnerLineas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <RadioGroup
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp">
+
+                <RadioButton
+
+                    android:id="@+id/idRadioIda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="10dp"
+                    android:text="Ida" />
+
+                <RadioButton
+
+                    android:id="@+id/idRadioVuelta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:padding="10dp"
+                    android:text="Vuelta" />
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnSelectLinea"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="#d67601"
+                android:onClick="buttonSelectLinea"
+                android:text="Aceptar"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
